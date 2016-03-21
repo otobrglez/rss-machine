@@ -1,0 +1,12 @@
+sudo: required
+
+language: go
+
+services:
+  - docker
+
+before_script:
+  - docker login --username=otobrglez --email=otobrglez@gmail.com -p $DOCKER_PASS
+  - docker build -t otobrglez/rss-machine -f Dockerfile .
+
+
