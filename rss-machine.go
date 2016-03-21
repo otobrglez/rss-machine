@@ -21,6 +21,14 @@ func parseHandler(res http.ResponseWriter, req *http.Request) {
   url := query.Get("url")
   start := time.Now()
 
+  if url == "" {
+    error := "Missing required URL."
+    json, _ := json.Marshal(map[string]interface{}{"error": error})
+    http.Error(res, string(json), http.StatusBadRequest)
+    errorsLogger.Println("Failed", error)
+    return
+  }
+
   rss.CacheParsedItemIDs(false)
   feed, error := rss.Fetch(url)
   if error != nil {
@@ -39,7 +47,6 @@ func parseHandler(res http.ResponseWriter, req *http.Request) {
   }
 
   logger.Println("Parsed", url, "in", time.Now().Sub(start).Seconds(), "sec.")
-
   res.Write(body)
 }
 
