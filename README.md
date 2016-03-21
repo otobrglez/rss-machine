@@ -4,8 +4,8 @@
 
 [![Build Status][circle-ci-badge]][circle-ci]
 [![ImageLayers][imagelayers-badge]][imagelayers]
-[![Docker Pulls][docker-pulls-badge]]()
-[![Docker Stars][docker-stars-badge]]()
+[![Docker Pulls][docker-pulls-badge]][docker-hub]
+[![Docker Stars][docker-stars-badge]][docker-hub]
 	
 
 Supported types feed types `RSS 1.0`, `RSS 2.0` and `ATOM 1.0`.
@@ -65,3 +65,4 @@ JSON response
 [docker-stars-badge]: https://img.shields.io/docker/stars/otobrglez/rss-machine.svg
 [rss-machine]: http://github.com/otobrglez/rss-machine
 [me]: https://github.com/otobrglez
+[docker-hub]: https://hub.docker.com/r/otobrglez/rss-machine/
