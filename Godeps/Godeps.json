@@ -1,0 +1,15 @@
+{
+	"ImportPath": "github.com/otobrglez/rss-machine",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v58",
+	"Deps": [
+		{
+			"ImportPath": "github.com/SlyMarbo/rss",
+			"Rev": "5e6e66b814395e9f52074d642e50cbeb9b6c1f8f"
+		},
+		{
+			"ImportPath": "github.com/axgle/mahonia",
+			"Rev": "c528b747d92d41ca581a7acf3e604c396fc7c034"
+		}
+	]
+}
