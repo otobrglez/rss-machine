@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.6-onbuild
 
 WORKDIR /go/src/github.com/otobrglez/rss-machine
 
