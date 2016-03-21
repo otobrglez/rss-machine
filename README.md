@@ -20,6 +20,39 @@ docker run -ti -p 5000:5000 otobrglez/rss-machine
 curl <docker_host>:5000/parse?url=http://rss.cnn.com/rss/edition.rss
 ```
 
+JSON response
+
+```json
+{
+    "description": "CNN.com delivers up-to....",
+    "image": {
+        "height": 0,
+        "title": "CNN.com - Top Stories",
+        "url": "http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif",
+        "width": 0
+    },
+    "items": [
+            {
+                "content": "A Florida civil j....",
+                "date": "2016-03-21T12:26:43Z",
+                "enclosures": null,
+                "id": "http://edition.cnn.com/2016/03/20/opinions/hulk-hogan-verdict-warning-shot-media-opinion-callan/index.html",
+                "link": "http://rss.cnn.com/c/35494/f/676993/s/4e65a3c7/sc/13/l/0Ledition0Bcnn0N0C20A160C0A30C20A0Copinions0Chulk0Ehogan0Everdict0Ewarning0Eshot0Emedia0Eopinion0Ecallan0Cindex0Bhtml0Deref0Fedition/story01.htm",
+                "read": false,
+                "summary": "",
+                "title": "Hulk Hogan verdict body-slams Gawker",
+            }
+            # ... 
+    ],
+    "link": "http://edition.cnn.com/index.html?eref=edition",
+    "nickname": "",
+    "refresh": "2016-03-21T12:41:28.162216767Z",
+    "title": "CNN.com - Top Stories",
+    "unread": 25,
+    "updateurl": "http://rss.cnn.com/rss/edition.rss"
+}     
+```
+
 ## Author
 
 - [Oto Brglez][me]
